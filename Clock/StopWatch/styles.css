@@ -38,3 +38,17 @@ body {
     color: chartreuse;
     font-size: 38px;
 }
+button {
+    font-size: 18px;
+    font-family: "Kanit";
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid chartreuse;
+    color: white;
+    margin: 15px 20px;
+    border-radius: 10px;
+}
+button:hover {
+    border-color: transparent;
+    color: chartreuse;
+}
