@@ -1,0 +1,323 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    height: 100svh;
+    width: 100%;
+}
+.nav-bar {
+    height: 100px;
+    width: 100%;
+    display: flex;
+}
+.logo {
+    height: 100%;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+.item:hover {
+    color: blue;
+    cursor: pointer;
+}
+.menu-bar:hover {
+    color: blue;
+}
+.nav-items {
+    height: 100%;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    font-family: "Kanit", sans-serif;
+    font-size: 18px;
+}
+.menu-bar {
+    height: fit-content;
+    width: fit-content;
+    font-size: 24px;
+    display: none;
+}
+.vrHeadsets {
+    height: 500px;
+    width: 100%;
+    display: flex;
+}
+.vrHeadsets-Content {
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+.strip {
+    height: 7px;
+    width: 100px;
+    background-color: #654AFF;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+.heading {
+    position: absolute;
+    font-size: 58px;
+    color: #654AFF;
+    font-family: "Kanit";
+    font-weight: 300;
+    top: 20%;
+    left: 20%;
+}
+.matter {
+    font-family: "Kanit";
+    font-size: 18px;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    right: 5%;
+    line-height: 30px;
+}
+.image-by {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    letter-spacing: 1px;
+    font-family: "Kanit";
+}
+.read-more {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    font-family: "Kanit";
+    font-size: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    background-color:#654AFF;
+    color: white;
+    border-radius: 7px;
+}
+.vrHeadsets-image {
+    height: 500px;
+    width: 600px;
+}
+.secondPart {
+    height: 650px;
+    width: 100%;
+    background-image: url("./Background.jpg");
+    background-size: 100% 100%;
+    position: relative;
+}
+.secondContent {
+    height: 475px;
+    width: 600px;
+    background-color: white;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    border-radius: 5px;
+}
+.tech {
+    font-family: "kanit";
+    color: #654AFF;
+    position: absolute;
+    top: 15%;
+    left: 14%;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.heading2 {
+    font-size: 65px;
+    color: #654AFF;
+    line-height: 70px;
+    font-family: "Kanit";
+    font-weight: 300;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+.img-by {
+    position: absolute;
+    top: 60%;
+    left: 11%;
+    font-family: "Open Sans", sans-serif;    
+    letter-spacing: 3px;    
+    font-weight: 400;
+    font-size: 18px;
+}
+.see-more {
+    height: 40px;
+    width: 120px;
+    border: 2px solid #6549FF;
+    position: absolute;
+    top: 75%;
+    left: 11%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "kanit";
+    letter-spacing: 1.2px;
+    font-weight: 400;
+}
+
+
+@media screen and (max-width:650px){
+    .nav-items {
+        display:none;
+    }
+    .menu-bar {
+        display: block;
+        position: absolute;
+        top: 7%;
+        right: 10%;
+    }
+    .logo {
+        justify-content: start;
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .vrHeadsets {
+        height: 450px;
+    }
+    .vrHeadsets-image {
+        height: 450px;
+        width: 550px;
+    }
+}
+@media screen and (max-width:1180px) {
+    .vrHeadsets {
+        height: 400px;
+    }
+    .vrHeadsets-image {
+        height: 400px;
+        width: 500px;
+    }
+    .heading {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:1177px) {
+    .image-by {
+        top: 70%;
+    }
+    .read-more {
+        top: 80%;
+    }
+}
+@media screen and (max-width:1064px) {
+    .vrHeadsets {
+        height: 350px;
+    }
+    .vrHeadsets-image {
+        height: 350px;
+        width: 450px;
+    }
+    .image-by {
+        top: 75%;
+    }
+    .read-more {
+        top: 85%;
+    }
+    .strip {
+        top: 17%;
+    }
+}
+@media (max-width:965px){
+    .vrHeadsets {
+        flex-direction: column-reverse;
+        height: 750px;
+        align-items: center;
+    }
+    .vrHeadsets-Content {
+        gap: 20px;
+        width: 100%;
+    }
+    .matter {
+        right: 20%;
+    }
+    .image-by {
+        top: 65%;
+    }
+    .read-more {
+        top: 75%;
+    }
+}
+@media screen and (max-width:505px) {
+    .image-by {
+        top: 70%;
+    }
+    .read-more {
+        top: 80%;
+    }
+}
+@media screen and (max-width:485px) {
+    .strip {
+        left: 12%;
+    }
+    .vrHeadsets-image {
+        height: 270px;
+        width: 350px;
+    }
+    .heading {
+        left: 12%;
+    }
+    .matter {
+        left: 15%;
+    }
+    .image-by {
+        left: 15%;
+    }
+    .read-more {
+        left: 15%;
+    }
+}
+@media screen and (max-width:410px) {
+    .heading {
+        color: black;
+        background-color: aqua;
+    }
+    .matter {
+        top: 50%;
+        font-size: 16px;
+        left: 10%;
+        right: 10%;
+    }
+    .image-by {
+        left: 12%;
+    }
+    .read-more {
+        left: 10%;
+        height: 40px;
+        width: 120px;
+    }
+}
+@media screen and (max-width:375px) {
+    .vrHeadsets-image {
+        height: 220px;
+        width: 300px;
+    }
+}
+@media screen and (max-width:875px) {
+    .vrHeadsets-Content {
+        /* background-color: yellow; */
+        width: 100%;
+    }
+    .strip {
+        top: 7%;
+    }
+    .heading {
+        top: 10%;
+        font-size: 58px;
+    }
+    .matter {
+        top: 33%;
+        right: 15%;
+    }
+}
